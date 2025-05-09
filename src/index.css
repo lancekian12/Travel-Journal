@@ -86,3 +86,7 @@ article.journal-entry .main-image {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.setup {
+  font-weight: bold;
+}
