@@ -32,6 +32,7 @@ header > h1 {
 
 article.journal-entry {
   display: flex;
+  margin-bottom: 36px;
 }
 
 article.journal-entry .marker {
@@ -85,8 +86,4 @@ article.journal-entry .main-image {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-.setup {
-  font-weight: bold;
 }
