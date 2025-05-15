@@ -2,6 +2,7 @@ import './App.css'
 import Entry from './component/Entry'
 import Header from "./component/Header"
 import data from "./data"
+import Joke from './component/Joke'
 
 
 function App() {
@@ -17,6 +18,11 @@ function App() {
     <>
       <Header />
       {entryElements}
+      <Joke
+        setup="How did the hacker escape the police?"
+        punchline="He just ransomware!"
+        isPun={true}
+      />
       {/* <JokeF
         punchline="It's hard to explain puns to kleptomaniacs because they always take things literally."
         upVotes={10}
@@ -26,7 +32,8 @@ function App() {
           { author: "", text: "", title: "" }
         ]}
       />
-      <Joke
+
+            <Joke
         setup="How did the hacker escape the police?"
         punchline="He just ransomware!"
         isPun={true}
