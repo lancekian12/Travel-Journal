@@ -2,6 +2,8 @@ import React from 'react'
 
 const Joke = (props) => {
     const [isShown, setIsShown] = React.useState(false)
+    const [unreadMessages] = React.useState(["ab"])
+
 
     function toggleShown() {
         setIsShown(prevShown => !prevShown)
@@ -14,7 +16,11 @@ const Joke = (props) => {
             {isShown && <p>{props.punchline}</p>}
             <button onClick={toggleShown}>Show punchline</button>
             <hr />
+            <div>
+                {unreadMessages.length > 0 && <h1>You have _ unread messages!</h1>}
+            </div>
         </div>
+
     )
 }
 
